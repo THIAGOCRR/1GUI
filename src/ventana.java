@@ -44,11 +44,13 @@ public class ventana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("ingrese las credenciales"));
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("Ingrese las credenciales"));
+        jPanel1.setToolTipText("");
+        jPanel1.setAutoscrolls(true);
 
         texto.setText("Usuario: ");
 
-        texto2.setText("Usuario: ");
+        texto2.setText("Contraseña:");
 
         textoDelusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -194,6 +196,8 @@ public class ventana extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jPanel1.getAccessibleContext().setAccessibleName("Ingrese las credenciales");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -213,17 +217,16 @@ public class ventana extends javax.swing.JFrame {
         
         String contraseña = new String (textoDecontraseña.getPassword());
         String texto = new String(textoDelusuario.getText());
-         String gmail;
          
          
          
          if (contraseña.equals("12345678") && texto.equals("alumno@ulp.edu.ar")) {
             
-            JOptionPane.showMessageDialog(this, "contraseña y gmail correctos");
+            JOptionPane.showMessageDialog(this, "Bienvenido al sistema");
              
              
         } else {
-              JOptionPane.showMessageDialog(this, "contraseña y/o gmail incorrectos");
+              JOptionPane.showMessageDialog(this, "Usuario y/o incorrectos");
         }
         
         
