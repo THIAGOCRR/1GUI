@@ -46,7 +46,7 @@ public class ventana extends javax.swing.JFrame {
 
         texto.setText("Usuario: ");
 
-        texto2.setText("Usuario: ");
+        texto2.setText("Contraseña:");
 
         textoDelusuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -211,7 +211,6 @@ public class ventana extends javax.swing.JFrame {
         
         String contraseña = new String (textoDecontraseña.getPassword());
         String texto = new String(textoDelusuario.getText());
-         String gmail;
          
          
          
