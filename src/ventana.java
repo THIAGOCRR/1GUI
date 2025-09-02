@@ -44,6 +44,8 @@ public class ventana extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder("ingrese las credenciales"));
+
         texto.setText("Usuario: ");
 
         texto2.setText("Usuario: ");
