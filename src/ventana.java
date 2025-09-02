@@ -215,7 +215,7 @@ public class ventana extends javax.swing.JFrame {
          
          
          
-         if (contraseña.equals("1234") && texto.equals("asd")) {
+         if (contraseña.equals("12345678") && texto.equals("alumno@ulp.edu.ar")) {
             
             JOptionPane.showMessageDialog(this, "contraseña y gmail correctos");
              
