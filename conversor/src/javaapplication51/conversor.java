@@ -188,7 +188,7 @@ public class conversor extends javax.swing.JFrame {
     private void jConvertirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jConvertirActionPerformed
         String texto = new String(txtGrados.getText());
         int nro=Integer.parseInt(texto);
-        if(rbuttCelsius.isSelected()){
+        if(rbuttFherenheit.isSelected()){
         double F= nro*9/5+32;
         JOptionPane.showMessageDialog(rootPane,"La temperatura en grados farenheit es:"+F);
         }
